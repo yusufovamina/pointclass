@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 
+
 class Point
 {
 private:
@@ -23,4 +24,6 @@ public:
     void get_info();
     void show_info();
 
+    void save(Point& point);
+    void load(Point& point);
 };

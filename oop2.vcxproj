@@ -131,8 +131,7 @@
     <ClCompile Include="point.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="file.h" />
-    <ClInclude Include="pointclass.h" />
+    <ClInclude Include="point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

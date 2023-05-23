@@ -1,5 +1,5 @@
 #include<iostream>
-#include"pointclass.h"
+#include"point.h"
 using namespace std;
 
 void Point::setX(int value) {
@@ -42,4 +42,22 @@ void Point::show_info() {
     cout<<"Z coordinate: "<<getZ()<<endl;
 
 }
+
+void Point::save(Point& point) {
+    FILE* file;
+    fopen_s(&file, "point.dat", "wb");
+    fwrite(&point, sizeof(Point), 1, file);
+
+    fclose(file);
+}
+
+void Point::load(Point& point) {
+    FILE* file;
+    fopen_s(&file, "point.dat", "rb");
+    fread(&point, sizeof(Point), 1, file);
+
+    fclose(file);
+}
+
+
 

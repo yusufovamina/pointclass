@@ -23,10 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pointclass.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="file.h">
+    <ClInclude Include="point.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
